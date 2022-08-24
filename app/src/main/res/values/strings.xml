@@ -5,4 +5,8 @@
     <string name="divide">/</string>
     <string name="mult">x</string>
     <string name="app_title">Super Cool Calculator</string>
+    <string name="number_1">Number 1</string>
+    <string name="number_2">Number 2</string>
+    <string name="power">^</string>
+    <string name="sqrt">sqrt</string>
 </resources>

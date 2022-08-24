@@ -7,6 +7,8 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="buttonRed">"#FFA63535"</color>
-    <color name="backdropBlue">#FF2EAAE6</color>
+    <color name="button_red">#FFAF2020</color>
+    <color name="backdrop">#2E2E2E</color>
+    <color name="button_ripple">#FF4500</color>
+    <color name="answer">#ffd700</color>d
 </resources>

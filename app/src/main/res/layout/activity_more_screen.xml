@@ -5,78 +5,42 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/backdrop"
-    tools:context=".MainActivity">
+    tools:context=".MoreScreen">
 
     <Button
         android:id="@+id/sqrtButton"
         android:layout_width="86dp"
         android:layout_height="83dp"
-        android:layout_marginEnd="64dp"
-        android:layout_marginBottom="336dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginBottom="308dp"
         android:backgroundTint="@color/button_red"
-        android:onClick="findDif"
+        android:onClick="findSqrt"
         android:scaleX="1.25"
         android:scaleY="1.25"
-        android:text="@string/minus"
+        android:text="@string/sqrt"
         android:textAlignment="center"
         android:textColor="#FBFBFB"
-        android:textSize="48sp"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:rippleColor="@color/button_ripple" />
-
-    <Button
-        android:id="@+id/multButton"
-        android:layout_width="86dp"
-        android:layout_height="83dp"
-        android:layout_marginTop="36dp"
-        android:backgroundTint="@color/button_red"
-        android:onClick="findProd"
-        android:scaleX="1.25"
-        android:scaleY="1.25"
-        android:text="@string/mult"
-        android:textSize="34sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/divButton"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/powerButton"
-        app:layout_constraintVertical_bias="0.0"
         app:rippleColor="@color/button_ripple" />
 
     <Button
         android:id="@+id/powerButton"
         android:layout_width="86dp"
         android:layout_height="83dp"
-        android:layout_marginBottom="336dp"
+        android:layout_marginBottom="308dp"
         android:backgroundTint="@color/button_red"
-        android:onClick="findSum"
+        android:onClick="findPow"
         android:scaleX="1.25"
         android:scaleY="1.25"
-        android:text="@string/plus"
+        android:text="@string/power"
         android:textColor="#F8F9FA"
         android:textSize="48sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/sqrtButton"
-        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintHorizontal_bias="0.49"
         app:layout_constraintStart_toStartOf="parent"
-        app:rippleColor="@color/button_ripple" />
-
-    <Button
-        android:id="@+id/divButton"
-        android:layout_width="86dp"
-        android:layout_height="83dp"
-        android:layout_marginTop="36dp"
-        android:layout_marginEnd="64dp"
-        android:backgroundTint="@color/button_red"
-        android:onClick="findDiv"
-        android:scaleX="1.25"
-        android:scaleY="1.25"
-        android:text="@string/divide"
-        android:textSize="40sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/sqrtButton"
-        app:layout_constraintVertical_bias="0.0"
         app:rippleColor="@color/button_ripple" />
 
     <EditText
@@ -140,17 +104,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/more"
-        android:layout_width="137dp"
-        android:layout_height="78dp"
-        android:layout_marginBottom="80dp"
-        android:backgroundTint="@color/button_red"
-        android:onClick="moreButton"
-        android:text="More"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
