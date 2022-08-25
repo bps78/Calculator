@@ -66,4 +66,15 @@ public class MoreScreen extends AppCompatActivity {
         }
 
     }
+
+    //Clears the two input text boxes when a button is pressed
+    public void clearButton(View view){
+        EditText num1 = findViewById(R.id.enterNum1);
+        EditText num2 = findViewById(R.id.enterNum2);
+        TextView ans = findViewById(R.id.answer);
+
+        ans.setText("");
+        num1.setText("");
+        num2.setText("");
+    }
 }

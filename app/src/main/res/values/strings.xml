@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Calculator</string>
+    <string name="app_name">Calcu-Now</string>
     <string name="plus">+</string>
     <string name="minus">-</string>
     <string name="divide">/</string>
@@ -9,4 +9,6 @@
     <string name="number_2">Number 2</string>
     <string name="power">^</string>
     <string name="sqrt">sqrt</string>
+    <string name="more">More</string>
+    <string name="clear">Clear</string>
 </resources>

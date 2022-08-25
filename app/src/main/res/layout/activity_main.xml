@@ -4,15 +4,28 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/backdrop"
+    android:background="@drawable/gradiantbackdrop"
     tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/clear"
+        android:layout_width="137dp"
+        android:layout_height="78dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="88dp"
+        android:backgroundTint="@color/button_red"
+        android:onClick="clearButton"
+        android:text="@string/clear"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:rippleColor="@color/button_ripple" />
 
     <Button
         android:id="@+id/sqrtButton"
         android:layout_width="86dp"
         android:layout_height="83dp"
-        android:layout_marginEnd="64dp"
-        android:layout_marginBottom="336dp"
+        android:layout_marginEnd="75dp"
+        android:layout_marginBottom="348dp"
         android:backgroundTint="@color/button_red"
         android:onClick="findDif"
         android:scaleX="1.25"
@@ -29,6 +42,7 @@
         android:id="@+id/multButton"
         android:layout_width="86dp"
         android:layout_height="83dp"
+        android:layout_marginStart="75dp"
         android:layout_marginTop="36dp"
         android:backgroundTint="@color/button_red"
         android:onClick="findProd"
@@ -37,28 +51,9 @@
         android:text="@string/mult"
         android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/divButton"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/powerButton"
         app:layout_constraintVertical_bias="0.0"
-        app:rippleColor="@color/button_ripple" />
-
-    <Button
-        android:id="@+id/powerButton"
-        android:layout_width="86dp"
-        android:layout_height="83dp"
-        android:layout_marginBottom="336dp"
-        android:backgroundTint="@color/button_red"
-        android:onClick="findSum"
-        android:scaleX="1.25"
-        android:scaleY="1.25"
-        android:text="@string/plus"
-        android:textColor="#F8F9FA"
-        android:textSize="48sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/sqrtButton"
-        app:layout_constraintHorizontal_bias="0.509"
-        app:layout_constraintStart_toStartOf="parent"
         app:rippleColor="@color/button_ripple" />
 
     <Button
@@ -66,7 +61,7 @@
         android:layout_width="86dp"
         android:layout_height="83dp"
         android:layout_marginTop="36dp"
-        android:layout_marginEnd="64dp"
+        android:layout_marginEnd="75dp"
         android:backgroundTint="@color/button_red"
         android:onClick="findDiv"
         android:scaleX="1.25"
@@ -79,11 +74,55 @@
         app:layout_constraintVertical_bias="0.0"
         app:rippleColor="@color/button_ripple" />
 
+    <Button
+        android:id="@+id/powerButton"
+        android:layout_width="86dp"
+        android:layout_height="83dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginBottom="348dp"
+        android:backgroundTint="@color/button_red"
+        android:onClick="findSum"
+        android:scaleX="1.25"
+        android:scaleY="1.25"
+        android:text="@string/plus"
+        android:textColor="#F8F9FA"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:rippleColor="@color/button_ripple" />
+
+    <Button
+        android:id="@+id/more"
+        android:layout_width="137dp"
+        android:layout_height="78dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="88dp"
+        android:backgroundTint="@color/button_red"
+        android:onClick="moreButton"
+        android:text="@string/more"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:rippleColor="@color/button_ripple" />
+
+    <TextView
+        android:id="@+id/answer"
+        android:layout_width="231dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="140dp"
+        android:maxLines="1"
+        android:textAlignment="center"
+        android:textColor="@color/answer"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <EditText
         android:id="@+id/enterNum2"
         android:layout_width="162dp"
         android:layout_height="48dp"
-        android:layout_marginTop="84dp"
+        android:layout_marginTop="60dp"
         android:layout_marginEnd="16dp"
         android:ems="10"
         android:hint="@string/number_2"
@@ -100,7 +139,7 @@
         android:id="@+id/enterNum1"
         android:layout_width="162dp"
         android:layout_height="48dp"
-        android:layout_marginTop="84dp"
+        android:layout_marginTop="60dp"
         android:layout_marginEnd="36dp"
         android:ems="10"
         android:hint="@string/number_1"
@@ -113,44 +152,5 @@
         app:layout_constraintEnd_toStartOf="@+id/enterNum2"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="TouchTargetSizeCheck" />
-
-    <TextView
-        android:id="@+id/mainTitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
-        android:text="@string/app_title"
-        android:textColor="@color/white"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/answer"
-        android:layout_width="231dp"
-        android:layout_height="77dp"
-        android:layout_marginTop="160dp"
-        android:maxLines="1"
-        android:textAlignment="center"
-        android:textColor="@color/answer"
-        android:textSize="34sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/more"
-        android:layout_width="137dp"
-        android:layout_height="78dp"
-        android:layout_marginBottom="80dp"
-        android:backgroundTint="@color/button_red"
-        android:onClick="moreButton"
-        android:text="More"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/backdrop"
+    android:background="@drawable/gradiantbackdrop"
     tools:context=".MoreScreen">
 
     <Button
@@ -104,5 +104,18 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/clear"
+        android:layout_width="137dp"
+        android:layout_height="78dp"
+        android:layout_marginBottom="156dp"
+        android:backgroundTint="@color/button_red"
+        android:onClick="clearButton"
+        android:text="@string/clear"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:rippleColor="@color/button_ripple" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

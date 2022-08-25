@@ -8,7 +8,9 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="button_red">#FFAF2020</color>
+    <color name="button_secondary">#FFDA2020</color>
     <color name="backdrop">#2E2E2E</color>
     <color name="button_ripple">#FF4500</color>
-    <color name="answer">#ffd700</color>d
+    <color name="answer">#ffd700</color>
+    <color name="secondary_highlight">#FF444444</color>
 </resources>
